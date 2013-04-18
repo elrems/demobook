@@ -14,5 +14,6 @@
     <author href="http://www.capinfopro.com" email="webmaster@capinfopro.com">
         Alexis Algoud
     </author>
- 
+	<plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+
 </widget>

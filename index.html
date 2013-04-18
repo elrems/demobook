@@ -9,20 +9,9 @@
 <body>
 
 		<div id="accueil" data-role="page">
-			<div data-role="panel" id="filter-panel" data-position="right" data-theme="b">
-				<div id="list-authors">
-					<h2>Auteurs</h2>
-					<a href="http://127.0.0.1/essential/cap-core/demo/frontoffice/author/author-adam-marie-thrse-10.php" data-role="button">Marie-Thérèse Adam</a>
-				</div>
-				<div id="list-genres">
-					<h2>Genres</h2>
-					<a href="http://127.0.0.1/essential/cap-core/demo/frontoffice/genre/genre-album.php" data-role="button">album</a>
-				</div>
-				<a data-rel="close" href="#" data-role="button" data-theme="a">Fermer</a>
-			</div>
+			
 			<div id="header" data-role="header"> 
-				<a href="javascript:$.mobile.navigate('#accueil')" data-icon="home">Accueil</a> 
-				<a href="#filter-panel" data-icon="gear" data-inline="true">Filtres</a> 
+				<a href="javascript:app.camera()" data-icon="star">Photo!</a> 
 				<h1>Ceci est mon entête</h1>
 			</div>
 			<div id="my-content" data-role="content">
@@ -32,12 +21,34 @@
 			<ul id="liste-livres" data-role="listview" data-autodividers="true"></ul>
 
 			</div>
-				<div id="footer" data-role="footer">
+			<div id="footer" data-role="footer">
 				Mon pied de page
 			</div>
 		</div>
-	</body>
-</html>
+		
+		
+		<div id="book" data-role="page">
+			<div data-role="header"> 
+				<a href="javascript:app.page('accueil')" data-icon="home">Accueil</a> 
+				<h1>Ceci est mon entête</h1>
+			</div>
+			
+			<div data-role="content">
+		
+				<h2 id="book-title">titre</h2>
+				de <a id="book-author" href="[book.author.url]" data-role="button" data-inline="true">auteur</a> 
+				genre <a href="" id="book-genre" data-role="button" data-inline="true">genre</a>
+				<br />Référence : <span id="book-reference"></span>
+				<div style="margin:10px; padding:20px; background: linear-gradient(to bottom, #b2e1ff 0%,#66b6fc 100%); " id="book-resume">
+					<img src="" id="book-image" style="max-width:200px; float:left; margin-right:20px;" />
+				</div>
 
-</body>
+			</div>
+			<div id="footer" data-role="footer">
+				Auteur du livre ? 
+			</div>
+		</div>
+		
+		
+	</body>
 </html>
