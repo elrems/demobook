@@ -1,4 +1,4 @@
-var INTERFACE = "http://valence.annueldesprix.com:8001/essential/cap-core/demo/backoffice/scripts/interface.php?";
+var INTERFACE = "http://capinfo11.ecritel.net/cap-core/demo/backoffice/scripts/interface.php?";
 
 var app = {
 
